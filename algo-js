@@ -1,4 +1,4 @@
-// Fonction de tri par insertion pour les débutants
+// Fonction de tri par insertion
 
 function trierParInsertion(tableau) {
   const tableauATrier = [...tableau];
