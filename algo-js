@@ -1,0 +1,25 @@
+// Fonction de tri par insertion pour les débutants
+
+function trierParInsertion(tableau) {
+  const tableauATrier = [...tableau];
+
+  for (let i = 1; i < tableauATrier.length; i++) {
+    let elementCourant = tableauATrier[i];
+
+    let positionComparaison = i - 1;
+
+    while (
+      positionComparaison >= 0 &&
+      tableauATrier[positionComparaison] > elementCourant
+    ) {
+      tableauATrier[positionComparaison + 1] =
+        tableauATrier[positionComparaison];
+
+      positionComparaison--;
+    }
+
+    tableauATrier[positionComparaison + 1] = elementCourant;
+  }
+
+  return tableauATrier;
+}
